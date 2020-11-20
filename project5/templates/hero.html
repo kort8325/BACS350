@@ -7,15 +7,15 @@
 </div>
  
   </div>
-    <title>SuperHero List</title>
+    <title>The Seven List</title>
 
     <body>
-        <h1>SuperHero List</h1>
+        <h1>The Seven List</h1>
         <h2>
-            These are my favorite heros.
+            These heros are part of the Seven
         </h2>
         <h3>If you want to test the features please create a new hero</h3>
-       <h3><Strong>Click on Superhero Name to see their Identity, Strength, Weakness and Picture!</strong></h3>
+       <h3><Strong>Click on Superhero Name to see their Identity, along with their friends and foes</strong></h3>
         <a href="{% url 'hero_add' %}" class="btn btn-primary">Add Hero</a>
         <hr>
        {% for hero in object_list %}
