@@ -10,7 +10,7 @@ urlpatterns = [
         HeroDeleteView.as_view(), name='hero_delete'),
     path('hero/<int:pk>/edit/',
         HeroUpdateView.as_view(), name='hero_edit'),
-    path('about', AboutPage.as_view()),
+    path('hero_news', AboutPage.as_view()),
     path('home', HomePage.as_view()),
     path('profile', ProfilePage.as_view()),
     path('', HomePage.as_view()),

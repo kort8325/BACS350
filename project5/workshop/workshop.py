@@ -3,13 +3,13 @@ from markdown import markdown
 from os.path import exists
 
 
-def lorem(num_words):
-    text = open('Documents/lorem.txt').read()
+def TheBoys(num_words):
+    text = open('Documents/TheBoys.txt').read()
     return ' '.join(text.split(' ')[:num_words])
     
 
 
-def card_data(title="Yellow Card", body=lorem(110), color='bg-warning', width='col-lg-12'):
+def card_data(title="Yellow Card", body=TheBoys(110), color='bg-warning', width='col-lg-12'):
     html = markdown(body)
     return dict(title=title, body=html, color=color, width=width)
 
@@ -17,9 +17,9 @@ def card_data(title="Yellow Card", body=lorem(110), color='bg-warning', width='c
 def cards_data():
     return [
                 card_data(),
-                card_data("Green Card",   lorem(40),  "bg-success", 'col-lg-4'),
-                card_data("Red Card", lorem(80), "bg-danger", 'col-lg-4'),
-                card_data("Blue Card",  lorem(30),  "bg-primary",  'col-lg-4'),
+                card_data("Green Card",   TheBoys(40),  "bg-success", 'col-lg-4'),
+                card_data("Red Card", TheBoys(80), "bg-danger", 'col-lg-4'),
+                card_data("Blue Card",  TheBoys(30),  "bg-primary",  'col-lg-4'),
             ]
 
 def markdown_file_data(doc):

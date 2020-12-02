@@ -34,11 +34,13 @@ class BasePage(TemplateView):
     template_name = "superhero_theme.html"
 
 class AboutPage(TemplateView):
-    template_name = 'about.html'
+    template_name = 'hero_news.html'
 
 class HomePage(TemplateView):
     template_name = 'home.html'
 
 class ProfilePage(TemplateView):
     template_name = 'profile.html'
+
+
 
